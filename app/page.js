@@ -104,12 +104,23 @@ export default function Home() {
             {/* Right Side - About Me Blurb */}
             <div className="md:w-2/3">
               <div className="bg-gray-50 p-8 rounded-lg shadow-md h-full">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">About Me</h3>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  A quick summary about me!
-                </p>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">Hi, I'm Leah.</h3>
+                  
+                  {/* FIRST PARAGRAPH */}
+                  <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                      With a M.S. in Mathematics and a love for the environment, my career has focused around using my analytical and computational skills to make a positive impact.
+                      I am currently an Air Quality Data Scientist for the Colorado Department of Public Health and Environment where I use quantitative methods to provide data-based answers about Colorado's air quality.
+                  </p>
+
+                  {/* SECOND PARAGRAPH */}
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                      When I'm not working, I'm still learning and challenging myself in other ways.
+                      I enjoy sharing my thoughts and data/math side projects in my blog, Polar Vertex.
+                      The core of who I am is demonstrated the most through my favorite hobby: ultrarunning. 
+                      I believe that determination and hard work can conquer any big challenge.
+                  </p>
               </div>
-            </div>
+          </div>
 
           </div>
         </div>
@@ -132,8 +143,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-gray-800">Data Science</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Describe your data science experience, skills, and projects here. 
-                  What kind of analysis do you do? What tools do you use?
+                  Highlights comming soon!
                 </p>
               </div>
             </div>
@@ -148,8 +158,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-gray-800">Mathematics</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Share your mathematical background and interests. What areas of 
-                  math fascinate you? How do you apply it?
+                  Highlights comming soon!
                 </p>
               </div>
             </div>
@@ -164,8 +173,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-gray-800">Research</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  What research are you involved in? What questions drive your work? 
-                  Highlight your research areas and contributions.
+                  Highlights comming soon!
                 </p>
               </div>
             </div>
@@ -180,8 +188,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-gray-800">Software Engineering</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  What do you build? Which languages and frameworks do you work with? 
-                  Share your development experience and favorite projects.
+                  Highlights comming soon!
                 </p>
               </div>
             </div>
@@ -196,8 +203,8 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-gray-800">Ultrarunning</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  What races have you run? What distances do you train for? 
-                  Share your ultrarunning journey and achievements.
+                  Ultrarunning has become a huge part of my life, and nicely compliments my other skills.
+                  More highlights comming soon!
                 </p>
               </div>
             </div>
@@ -206,37 +213,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects/Gallery Section */}
-      <section className="py-16 px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-gray-800">My Projects</h2>
-          <p className="text-lg text-gray-700 mb-8">
-            Share some projects, achievements, or photos you're proud of.
-          </p>
-          
-          {/* Image grid */}
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <img 
-                src="/project1.jpg" 
-                alt="Project 1" 
-                className="rounded-lg shadow-md w-full mb-3"
-              />
-              <h3 className="text-xl font-semibold text-gray-800">Project Title</h3>
-              <p className="text-gray-600">Brief description of this project.</p>
-            </div>
-            <div>
-              <img 
-                src="/project2.jpg" 
-                alt="Project 2" 
-                className="rounded-lg shadow-md w-full mb-3"
-              />
-              <h3 className="text-xl font-semibold text-gray-800">Another Project</h3>
-              <p className="text-gray-600">What this project is about.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Contact/Footer Section */}
       <section className="bg-gray-800 text-white py-12 px-6">
