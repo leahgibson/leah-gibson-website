@@ -4,7 +4,7 @@ export default function Home() {
       {/* Header/Hero Section */}
       <section 
         className="relative bg-blue-600 text-white py-20 px-6 bg-cover bg-center"
-        style={{ backgroundImage: "url('/header.jpg')" }}
+        style={{ backgroundImage: "url('/header.JPG')" }}
       >
         {/* Dark overlay to make text readable */}
         <div className="absolute inset-0 bg-black opacity-10"></div>
@@ -25,11 +25,10 @@ export default function Home() {
             <div className="md:w-1/3 flex flex-col items-center">
               {/* Circular Headshot */}
               <img 
-                src="/headshot.jpg" 
+                src="/headshot.JPG" 
                 alt="Leah" 
                 className="w-48 h-48 rounded-full object-cover shadow-lg mb-4"
               />
-              {/* Put your headshot image in the public folder as "headshot.jpg" */}
               
               {/* Title */}
               <div className="text-center mb-4">
@@ -196,7 +195,7 @@ export default function Home() {
             {/* Ultrarunning Card */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img 
-                src="/ultrarunning.jpg" 
+                src="/ultrarunning.JPG" 
                 alt="Ultrarunning" 
                 className="w-full h-48 object-cover"
               />
