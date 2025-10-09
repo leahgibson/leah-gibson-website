@@ -104,17 +104,17 @@ export default function Home() {
             {/* Right Side - About Me Blurb */}
             <div className="md:w-2/3">
               <div className="bg-gray-50 p-8 rounded-lg shadow-md h-full">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4">Hi, I'm Leah.</h3>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">Hi, I&apos;m Leah.</h3>
                   
                   {/* FIRST PARAGRAPH */}
                   <p className="text-lg text-gray-700 leading-relaxed mb-4">
                       With a M.S. in Mathematics and a love for the environment, my career has focused around using my analytical and computational skills to make a positive impact.
-                      I am currently an Air Quality Data Scientist for the Colorado Department of Public Health and Environment where I use quantitative methods to provide data-based answers about Colorado's air quality.
+                      I am currently an Air Quality Data Scientist for the Colorado Department of Public Health and Environment where I use quantitative methods to provide data-based answers about Colorado&apos;s air quality.
                   </p>
 
                   {/* SECOND PARAGRAPH */}
                   <p className="text-lg text-gray-700 leading-relaxed">
-                      When I'm not working, I'm still learning and challenging myself in other ways.
+                      When I&apos;m not working, I&apos;m still learning and challenging myself in other ways.
                       I enjoy sharing my thoughts and data/math side projects in my blog, Polar Vertex.
                       The core of who I am is demonstrated the most through my favorite hobby: ultrarunning. 
                       I believe that determination and hard work can conquer any big challenge.
@@ -219,7 +219,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
           <p className="text-lg mb-6">
-            I'd love to hear from you! Connect with me:
+            I&apos;d love to hear from you! Connect with me:
           </p>
           
           {/* Email */}
