@@ -114,7 +114,7 @@ export default function Home() {
                   
                   {/* FIRST PARAGRAPH */}
                   <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                      With a Master's in Mathematics and a love for the environment, my career has focused around using my analytical and computational skills to make a positive impact on our planet.
+                      With a Master&apos;s in Mathematics and a love for the environment, my career has focused around using my analytical and computational skills to make a positive impact on our planet.
                       I am currently an Air Quality Data Scientist for the Colorado Department of Public Health and Environment where I use quantitative methods to provide data-based answers about Colorado&apos;s air quality.
                   </p>
 
@@ -124,7 +124,7 @@ export default function Home() {
                       I share many of my mathe and data side projects on my blog, Polar Vertex.
                       Ultrarunning takes a good portion of my time and captures who I am at my core: determined, disciplined, and happiest outdoors.
                       Long hours on the trail feed my love for nature and remind me that growth comes from showing up and pushing through even when it gets hard.
-                      It's a mindset I carry into every part of my life.
+                      It&apos;s a mindset I carry into every part of my life.
                   </p>
 
                   <p className="text-lg text-gray-700 leading-relaxed">
@@ -241,7 +241,7 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-3 text-gray-800">Background</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    A look at where I've been, from my academic roots in mathematics to my work as a data scientist.
+                    A look at where I&apos;ve been, from my academic roots in mathematics to my work as a data scientist.
                   </p>
                 </div>
               </div>
