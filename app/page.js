@@ -1,5 +1,12 @@
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Link from 'next/link';
+
 export default function Home() {
   return (
+    <>
+      <Navbar />
+      
     <main className="min-h-screen bg-gray-50">
       {/* Header/Hero Section */}
       <section 
@@ -107,16 +114,21 @@ export default function Home() {
                   
                   {/* FIRST PARAGRAPH */}
                   <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                      With a M.S. in Mathematics and a love for the environment, my career has focused around using my analytical and computational skills to make a positive impact.
+                      With a Master's in Mathematics and a love for the environment, my career has focused around using my analytical and computational skills to make a positive impact on our planet.
                       I am currently an Air Quality Data Scientist for the Colorado Department of Public Health and Environment where I use quantitative methods to provide data-based answers about Colorado&apos;s air quality.
                   </p>
 
                   {/* SECOND PARAGRAPH */}
                   <p className="text-lg text-gray-700 leading-relaxed">
-                      When I&apos;m not working, I&apos;m still learning and challenging myself in other ways.
-                      I enjoy sharing my thoughts and data/math side projects in my blog, Polar Vertex.
-                      The core of who I am is demonstrated the most through my favorite hobby: ultrarunning. 
-                      I believe that determination and hard work can conquer any big challenge.
+                      When I&apos;m not working, I&apos;m still learning and challenging myself in new ways.
+                      I share many of my mathe and data side projects on my blog, Polar Vertex.
+                      Ultrarunning takes a good portion of my time and captures who I am at my core: determined, disciplined, and happiest outdoors.
+                      Long hours on the trail feed my love for nature and remind me that growth comes from showing up and pushing through even when it gets hard.
+                      It's a mindset I carry into every part of my life.
+                  </p>
+
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                      
                   </p>
               </div>
           </div>
@@ -133,154 +145,115 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             {/* Data Science Card */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img 
-                src="/data_science.png" 
-                alt="Data Science" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-gray-800">Data Science</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Highlights coming soon!
-                </p>
+            <Link href="/data-science">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img 
+                  src="/data_science.png" 
+                  alt="Data Science" 
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-3 text-gray-800">Data Science</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Highlights coming soon!
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
 
             {/* Mathematics Card */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img 
-                src="/mathematics.png" 
-                alt="Mathematics" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-gray-800">Mathematics</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Highlights coming soon!
-                </p>
+            <Link href="/mathematics">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img 
+                  src="/mathematics.png" 
+                  alt="Mathematics" 
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-3 text-gray-800">Mathematics</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Highlights coming soon!
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
 
             {/* Research Card */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img 
-                src="/research.jpeg" 
-                alt="Research" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-gray-800">Research</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Highlights coming soon!
-                </p>
+            <Link href="/research">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img 
+                  src="/research.jpeg" 
+                  alt="Research" 
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-3 text-gray-800">Research</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Highlights coming soon!
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
 
             {/* Software Engineering Card */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img 
-                src="/software.png" 
-                alt="Software Engineering" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-gray-800">Software Engineering</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Highlights coming soon!
-                </p>
+            <Link href="/software-engineering">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img 
+                  src="/software.png" 
+                  alt="Software Engineering" 
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-3 text-gray-800">Software Engineering</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Highlights coming soon!
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
 
             {/* Ultrarunning Card */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img 
-                src="/ultrarunning.JPG" 
-                alt="Ultrarunning" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-gray-800">Ultrarunning</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Ultrarunning has become a huge part of my life, and nicely complements my other skills.
-                  More highlights coming soon!
-                </p>
+            <Link href="/ultrarunning">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img 
+                  src="/ultrarunning.JPG" 
+                  alt="Ultrarunning" 
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-3 text-gray-800">Ultrarunning</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Ultrarunning has become a huge part of my life, and nicely complements my other skills.
+                    More highlights coming soon!
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
+
+            {/* Experience Card */}
+            <Link href="/background">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img 
+                  src="/experience.JPG" 
+                  alt="Background" 
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-3 text-gray-800">Background</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    A look at where I've been, from my academic roots in mathematics to my work as a data scientist.
+                  </p>
+                </div>
+              </div>
+            </Link>
 
           </div>
         </div>
       </section>
 
+      <Footer />
 
-      {/* Contact/Footer Section */}
-      <section className="bg-gray-800 text-white py-12 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
-          <p className="text-lg mb-6">
-            I&apos;d love to hear from you! Connect with me:
-          </p>
-          
-          {/* Email */}
-          <p className="text-xl mb-8">
-            <a href="mailto:leah.d.gibson98@gmail.com" className="text-blue-400 hover:text-blue-300">
-              Email Me
-            </a>
-          </p>
-
-          {/* Social Media Links */}
-          <div className="flex flex-wrap justify-center gap-6 text-lg">
-            <a 
-              href="https://linkedin.com/in/leahdgibson" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition"
-            >
-              LinkedIn
-            </a>
-            <span className="text-gray-500">•</span>
-            
-            <a 
-              href="https://x.com/c0mbinatorial" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition"
-            >
-              Twitter/X
-            </a>
-            <span className="text-gray-500">•</span>
-            
-            <a 
-              href="https://polarvertex.substack.com" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition"
-            >
-              Substack
-            </a>
-            <span className="text-gray-500">•</span>
-            
-            <a 
-              href="https://github.com/leahgibson" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition"
-            >
-              GitHub
-            </a>
-            <span className="text-gray-500">•</span>
-            
-            <a 
-              href="https://orcid.org/0009-0000-4429-7019" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition"
-            >
-              ORCID
-            </a>
-          </div>
-        </div>
-      </section>
     </main>
+    </>
   );
 }
