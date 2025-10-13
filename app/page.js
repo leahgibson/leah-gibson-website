@@ -155,7 +155,7 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-3 text-gray-800">Data Science</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Highlights coming soon!
+                    Highlight coming soon!
                   </p>
                 </div>
               </div>
@@ -172,7 +172,7 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-3 text-gray-800">Mathematics</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Highlights coming soon!
+                    Using mathematics to uncover hidden structure in complex data.
                   </p>
                 </div>
               </div>
