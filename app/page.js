@@ -206,7 +206,7 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-3 text-gray-800">Software Engineering</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Highlights coming soon!
+                    Building open-source software that bridges environmental science and machine learning.
                   </p>
                 </div>
               </div>
