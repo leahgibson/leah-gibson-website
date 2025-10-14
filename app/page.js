@@ -223,8 +223,8 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-3 text-gray-800">Ultrarunning</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Ultrarunning has become a huge part of my life, and nicely complements my other skills.
-                    More highlights coming soon!
+                    Ultrarunning has become a huge part of my life.
+                    A look at what drives me to run far and what I learn from every mile.
                   </p>
                 </div>
               </div>
