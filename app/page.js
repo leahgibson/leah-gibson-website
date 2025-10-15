@@ -121,7 +121,7 @@ export default function Home() {
                   {/* SECOND PARAGRAPH */}
                   <p className="text-lg text-gray-700 leading-relaxed">
                       When I&apos;m not working, I&apos;m still learning and challenging myself in new ways.
-                      I share many of my mathe and data side projects on my blog, Polar Vertex.
+                      I share many of my math and data side projects on my blog, Polar Vertex.
                       Ultrarunning takes a good portion of my time and captures who I am at my core: determined, disciplined, and happiest outdoors.
                       Long hours on the trail feed my love for nature and remind me that growth comes from showing up and pushing through even when it gets hard.
                       It&apos;s a mindset I carry into every part of my life.
