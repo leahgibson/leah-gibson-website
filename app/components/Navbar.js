@@ -32,7 +32,7 @@ export default function Navbar() {
 
               {/* Dropdown Menu */}
               {isDropdownOpen && (
-                <div className="absolute top-full left-0 mt-0 w-56 bg-white rounded-lg shadow-lg py-2">
+                <div className="absolute top-full right-0 mt-0 w-56 bg-white rounded-lg shadow-lg py-2">
                   <Link 
                     href="/data-science"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition"
