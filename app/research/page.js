@@ -43,7 +43,7 @@ export default function Research() {
             >
               published
             </a>
-            , but here I’ll highlight my analytical approach and the tools I used to explore these questions.
+            , but here I&apos;ll highlight my analytical approach and the tools I used to explore these questions.
           </p>
 
           {/* Two figures side by side */}

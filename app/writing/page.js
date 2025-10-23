@@ -38,7 +38,7 @@ export default function Writing() {
           <h1 className="text-4xl font-bold mb-6 text-gray-800">Writing</h1>
           
           <p className="text-lg text-gray-700 mb-8">
-            I write about mathematics, atmospheric science, and any other projects or topics I'm interested in on my Substack,{' '}
+            I write about mathematics, atmospheric science, and any other projects or topics I&apos;m interested in on my Substack,{' '}
             <a 
               href="https://polarvertex.substack.com"
               target="_blank"
