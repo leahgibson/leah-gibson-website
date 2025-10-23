@@ -72,6 +72,10 @@ export default function Navbar() {
                 </div>
               )}
             </div>
+
+            <Link href="/writing" className="text-gray-700 hover:text-blue-700 transition">
+              Writing
+            </Link>
           </div>
         </div>
       </div>
