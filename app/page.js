@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Link from 'next/link';
+import ActivityFeed from './components/ActivityFeed';
 
 export default function Home() {
   return (
@@ -248,6 +249,12 @@ export default function Home() {
             </Link>
 
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-6 bg-white">
+        <div>
+          <ActivityFeed />
         </div>
       </section>
 
