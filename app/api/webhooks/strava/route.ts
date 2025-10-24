@@ -26,8 +26,8 @@ export async function POST(req: NextRequest) {
     const data = await req.json();
     console.log('Strava webhook received:', data);
     
-    // Only process new activities
-    if (data.object_type === 'activity' && data.aspect_type === 'create') {
+    // Process new activities and updates
+    if (data.object_type === 'activity' && data.aspect_type === 'create' || data.aspect_type === 'update') {
       const activityId = data.object_id;
       
       console.log('Fetching activity details for:', activityId);
@@ -52,17 +52,21 @@ export async function POST(req: NextRequest) {
       const activity = await response.json();
       console.log('Activity details:', activity);
       
-      // Only store runs (or modify to include other activity types)
-      if (activity.type === 'Run' || activity.type === 'Ride' || activity.type === 'Swim') {
+      // Only store certain activities
+      const allowedTypes = ['Run', 'Ride', 'Hike', 'Ski', 'MountainBike'];
+
+      if (allowedTypes.includes(activity.type)) {
         const distanceMiles = (activity.distance / 1609.34).toFixed(2);
         
-        await prisma.activity.create({
-          data: {
+        // Insert if new, update if already exists
+        await prisma.activity.upsert({
+          where: { id: activity.id }, // use Strava activity ID
+          update: {
             type: 'strava',
             timestamp: new Date(activity.start_date),
             title: activity.name,
             description: `${distanceMiles} miles`,
-            url: `https://www.strava.com/activities/${activityId}`,
+            url: `https://www.strava.com/activities/${activity.id}`,
             metadata: {
               distance: activity.distance,
               moving_time: activity.moving_time,
@@ -70,9 +74,23 @@ export async function POST(req: NextRequest) {
               elevation_gain: activity.total_elevation_gain,
             },
           },
+            create: {
+              id: activity.id,
+              type: 'strava',
+              timestamp: new Date(activity.start_date),
+              title: activity.name,
+              description: `${distanceMiles} miles`,
+              url: `https://www.strava.com/activities/${activityId}`,
+              metadata: {
+                distance: activity.distance,
+                moving_time: activity.moving_time,
+                type: activity.type,
+                elevation_gain: activity.total_elevation_gain,
+              },
+            }
         });
         
-        console.log('✅ Saved activity to database');
+        console.log('✅ Saved/updated activity to database');
       } else {
         console.log('⏭️  Skipping non-run activity:', activity.type);
       }
