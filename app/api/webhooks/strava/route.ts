@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '../../../../lib/prisma';
 
@@ -53,14 +55,13 @@ export async function POST(req: NextRequest) {
       // Only store runs (or modify to include other activity types)
       if (activity.type === 'Run' || activity.type === 'Ride' || activity.type === 'Swim') {
         const distanceMiles = (activity.distance / 1609.34).toFixed(2);
-        const durationMinutes = Math.floor(activity.moving_time / 60);
         
         await prisma.activity.create({
           data: {
             type: 'strava',
             timestamp: new Date(activity.start_date),
             title: activity.name,
-            description: `${distanceMiles} miles in ${durationMinutes} minutes`,
+            description: `${distanceMiles} miles`,
             url: `https://www.strava.com/activities/${activityId}`,
             metadata: {
               distance: activity.distance,
