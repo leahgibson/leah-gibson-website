@@ -57,40 +57,47 @@ export async function POST(req: NextRequest) {
 
       if (allowedTypes.includes(activity.type)) {
         const distanceMiles = (activity.distance / 1609.34).toFixed(2);
+
+        const activityUrl = `https://www.strava.com/activities/${activityId}`;
+
+        // Check if activity already in database
+        const existing = await prisma.activity.findFirst({
+            where: {
+            type: 'strava',
+            url: activityUrl,
+            },
+        });
         
-        // Insert if new, update if already exists
-        await prisma.activity.upsert({
-          where: { id: activity.id }, // use Strava activity ID
-          update: {
+        const activityData = {
             type: 'strava',
             timestamp: new Date(activity.start_date),
             title: activity.name,
             description: `${distanceMiles} miles`,
-            url: `https://www.strava.com/activities/${activity.id}`,
+            url: activityUrl,
             metadata: {
-              distance: activity.distance,
-              moving_time: activity.moving_time,
-              type: activity.type,
-              elevation_gain: activity.total_elevation_gain,
+            distance: activity.distance,
+            moving_time: activity.moving_time,
+            type: activity.type,
+            elevation_gain: activity.total_elevation_gain,
+            strava_id: activityId,
             },
-          },
-            create: {
-              id: activity.id,
-              type: 'strava',
-              timestamp: new Date(activity.start_date),
-              title: activity.name,
-              description: `${distanceMiles} miles`,
-              url: `https://www.strava.com/activities/${activityId}`,
-              metadata: {
-                distance: activity.distance,
-                moving_time: activity.moving_time,
-                type: activity.type,
-                elevation_gain: activity.total_elevation_gain,
-              },
-            }
-        });
+        };
+
+        if (existing) {
+            // Update existing activity
+            await prisma.activity.update({
+            where: { id: existing.id },
+            data: activityData,
+            });
+            console.log('✅ Updated existing activity in database');
+        } else {
+            // Create new activity
+            await prisma.activity.create({
+            data: activityData,
+            });
+            console.log('✅ Saved new activity to database');
+        }
         
-        console.log('✅ Saved/updated activity to database');
       } else {
         console.log('⏭️  Skipping non-run activity:', activity.type);
       }
