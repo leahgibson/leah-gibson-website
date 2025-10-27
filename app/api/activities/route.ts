@@ -16,7 +16,7 @@ export async function GET() {
       orderBy: {
         timestamp: 'desc',
       },
-      take: 50, // Limit to 50 most recent
+      take: 5, // Limit to 5 most recent
     });
     
     return NextResponse.json(activities);

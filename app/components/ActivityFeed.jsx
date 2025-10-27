@@ -27,7 +27,7 @@ export default function ActivityFeed() {
   if (loading) {
     return (
       <div className="py-16 px-6 bg-white">
-        <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">My Recent Recent Activity</h2>
+        <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">My Recent Activity</h2>
         <p className="text-gray-600">Loading...</p>
       </div>
     );
@@ -36,7 +36,7 @@ export default function ActivityFeed() {
   if (error) {
     return (
       <div className="py-16 px-6 bg-white">
-        <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">My Recent Recent Activity</h2>
+        <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">My Recent Activity</h2>
         <p className="text-red-600">{error}</p>
       </div>
     );
@@ -45,7 +45,7 @@ export default function ActivityFeed() {
   if (activities.length === 0) {
     return (
       <div className="py-16 px-6 bg-white">
-        <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">My Recent Recent Activity</h2>
+        <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">My Recent Activity</h2>
         <p className="text-gray-600">No recent activity</p>
       </div>
     );
@@ -63,7 +63,7 @@ export default function ActivityFeed() {
             <div className="flex items-start gap-3">
               {/* Icon */}
               <div className="text-2xl">
-                {activity.type === 'github' ? '💻' : '🏃'}
+                {activity.type === 'github' ? '💻' : '🏃‍♀️'}
               </div>
               
               {/* Content */}
