@@ -63,7 +63,7 @@ export default function ActivityFeed() {
             <div className="flex items-start gap-3">
               {/* Icon */}
               <div className="text-2xl">
-                {activity.type === 'github' ? '💻' : '🏃‍♀️'}
+                {activity.type === 'github' ? '💻' : '🏔️'}
               </div>
               
               {/* Content */}
