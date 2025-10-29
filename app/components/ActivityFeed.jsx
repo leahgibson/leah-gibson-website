@@ -2,6 +2,27 @@
 
 import { useEffect, useState } from 'react';
 
+const getActivityEmoji = (activity) => {
+    if (activity.type === 'github') return '💻';
+
+    const stravaType = activity.metadata?.type;
+
+    switch(stravaType) {
+        case 'Run':
+            return '🏃‍♀️';
+        case 'Ride':
+            return '🚲';
+        case 'Ski':
+            return '⛷️';
+        case 'Hike':
+            return '🥾';
+        case 'MountainBike':
+            return '🚵‍♂️';
+        default:
+            return '🏔️';
+    }
+};
+
 export default function ActivityFeed() {
   const [activities, setActivities] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -63,7 +84,7 @@ export default function ActivityFeed() {
             <div className="flex items-start gap-3">
               {/* Icon */}
               <div className="text-2xl">
-                {activity.type === 'github' ? '💻' : '🏔️'}
+                {getActivityEmoji(activity)}
               </div>
               
               {/* Content */}
