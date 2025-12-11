@@ -34,35 +34,35 @@ export default function Navbar() {
               {isDropdownOpen && (
                 <div className="absolute top-full right-0 mt-0 w-56 bg-white rounded-lg shadow-lg py-2">
                   <Link 
+                    href="/pmf2speciate"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition"
+                  >
+                    pmf2speciate
+                  </Link>
+                  {/* <Link 
                     href="/data-science"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition"
                   >
                     Data Science
-                  </Link>
+                  </Link> */}
                   <Link 
-                    href="/mathematics"
+                    href="/sailnet"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition"
                   >
-                    Mathematics
-                  </Link>
-                  <Link 
-                    href="/research"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition"
-                  >
-                    Research
-                  </Link>
-                  <Link 
-                    href="/software-engineering"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition"
-                  >
-                    Software Engineering
+                    SAIL-Net
                   </Link>
                   <Link 
                     href="/ultrarunning"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition"
                   >
-                    Ultrarunning
+                    The Data of Ultrarunning
                   </Link>
+                  {/* <Link 
+                    href="/mathematics"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition"
+                  >
+                    Mathematics
+                  </Link> */}
                   <Link 
                     href="/background"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition"

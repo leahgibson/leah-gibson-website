@@ -7,7 +7,7 @@ export default function SoftwareEngineering() {
         <Navbar />
         <main className="min-h-screen bg-gray-50 py-16 px-6">
         <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold mb-6 text-gray-800">Software</h1>
+            <h1 className="text-4xl font-bold mb-6 text-gray-800">pmf2speciate</h1>
 
             <p className="text-lg text-gray-700 mb-6">
             When collecting air quality measurements, one of the main goals is often to identify the sources of those compounds. 

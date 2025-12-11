@@ -141,73 +141,39 @@ export default function Home() {
       {/* Skills Section */}
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">What I Do</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">My Portfolio</h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
             
-            {/* Data Science Card */}
-            <Link href="/data-science">
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <img 
-                  src="/data_science.png" 
-                  alt="Data Science" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-3 text-gray-800">Data Science</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Highlight coming soon!
-                  </p>
-                </div>
-              </div>
-            </Link>
-
-            {/* Mathematics Card */}
-            <Link href="/mathematics">
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <img 
-                  src="/mathematics.png" 
-                  alt="Mathematics" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-3 text-gray-800">Mathematics</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Using mathematics to uncover hidden structure in complex data.
-                  </p>
-                </div>
-              </div>
-            </Link>
-
-            {/* Research Card */}
-            <Link href="/research">
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <img 
-                  src="/research.jpeg" 
-                  alt="Research" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-3 text-gray-800">Research</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Exploring atmospheric questions through data-driven research and fieldwork.
-                  </p>
-                </div>
-              </div>
-            </Link>
-
-            {/* Software Engineering Card */}
-            <Link href="/software-engineering">
+            {/* pmf2speciate card */}
+            <Link href="/pmf2speciate">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <img 
                   src="/software.png" 
-                  alt="Software Engineering" 
+                  alt="pmf2speciate" 
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-3 text-gray-800">Software Engineering</h3>
+                  <h3 className="text-2xl font-bold mb-3 text-gray-800">pmf2speciate</h3>
                   <p className="text-gray-600 leading-relaxed">
                     Building open-source software that bridges environmental science and machine learning.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* SAIL-Net Card */}
+            <Link href="/sailnet">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img 
+                  src="/research.jpeg" 
+                  alt="SAILNet" 
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-3 text-gray-800">SAIL-Net</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Exploring atmospheric dynamics through data-driven research and fieldwork.
                   </p>
                 </div>
               </div>
@@ -222,15 +188,51 @@ export default function Home() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-3 text-gray-800">Ultrarunning</h3>
+                  <h3 className="text-2xl font-bold mb-3 text-gray-800">The Data of Ultrarunning</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Ultrarunning has become a huge part of my life.
-                    A look at what drives me to run far and what I learn from every mile.
+                    My personal project using my own running data. A look at what drives me to run far and what I learn from every mile.
                   </p>
                 </div>
               </div>
             </Link>
 
+
+
+            {/* Data Science Card
+            <Link href="/data-science">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img 
+                  src="/data_science.png" 
+                  alt="Data Science" 
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-3 text-gray-800">Data Science</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Highlight coming soon!
+                  </p>
+                </div>
+              </div>
+            </Link> */}
+
+            {/* Mathematics Card
+            <Link href="/mathematics">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img 
+                  src="/mathematics.png" 
+                  alt="Mathematics" 
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-3 text-gray-800">Mathematics</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Using mathematics to uncover hidden structure in complex data.
+                  </p>
+                </div>
+              </div>
+            </Link> */}
+
+            
             {/* Experience Card */}
             <Link href="/background">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
@@ -240,7 +242,7 @@ export default function Home() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-3 text-gray-800">Background</h3>
+                  <h3 className="text-2xl font-bold mb-3 text-gray-800">My Background</h3>
                   <p className="text-gray-600 leading-relaxed">
                     A look at where I&apos;ve been, from my academic roots in mathematics to my work as a data scientist.
                   </p>
